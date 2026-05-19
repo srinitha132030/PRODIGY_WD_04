@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projects |Srinitha</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="glass-header">
+    <div class="container">
+      <h1 class="logo">Portfolio</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="projects-section">
+    <h2>💻 My Projects</h2>
+    <div class="projects-grid">
+
+ 
+
+<div class="project-card">
+  <h3>🌐 Responsive Landing Page</h3>
+  <p>
+    A modern and responsive landing page created as part of my internship at Prodigy InfoTech. Includes a fixed interactive navbar, smooth scrolling, and a clean layout across all devices.
+  </p>
+  <div class="tech-stack">
+    <span>HTML</span>
+    <span>CSS</span>
+    <span>JavaScript</span>
+  </div>
+  <div class="buttons">
+    <a href="https://github.com/srinitha132030/PRODIGY_WD_01" target="_blank">GitHub</a>
+    <a href="https://srinitha132030.github.io/PRODIGY_WD_01/" target="_blank">🎬 Try it Live</a>
+    
+  </div>
+</div>
+
+<!-- Task 2: Stopwatch App -->
+<div class="project-card">
+  <h3>⏱ Stopwatch Web App</h3>
+  <p>
+    A fully functional stopwatch application with Start, Stop, Reset, and Lap features. Built using vanilla JavaScript and styled for a user-friendly experience.
+  </p>
+  <div class="tech-stack">
+    <span>HTML</span>
+    <span>CSS</span>
+    <span>JavaScript</span>
+  </div>
+  <div class="buttons">
+    <a href="https://github.com/srinitha132030/PRODIGY_WD_02" target="_blank">GitHub</a>
+    
+    <a href=" https://srinitha132030.github.io/PRODIGY_WD_02/" target="_blank">🎬 Try it Live</a>
+  </div>
+</div>
+
+      <!-- Tic-Tac-Toe -->
+      <div class="project-card">
+        <h3>🎮 Tic-Tac-Toe Game</h3>
+        <p>A fun and responsive Tic-Tac-Toe game where users can play vs friend or AI.</p>
+        <div class="tech-stack">
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
+        </div>
+        <div class="buttons">
+          <a href="https://github.com/srinitha132030/PRODIGY_WD_03" target="_blank">GitHub</a>
+          <a href="https://srinitha132030.github.io/PRODIGY_WD_03/" target="_blank">🎬 Try it Live</a>
+        </div>
+      </div>
+  
+
+
+  </main>
+
+  <footer class="glass-footer">
+    <p>© 2026 Srinitha bejugam|Web Developer</p>
+  </footer>
+<!-- Popup Video Player -->
+<div id="videoPopup" class="video-popup hidden">
+  <div class="video-content">
+    <span class="close-btn" onclick="closeVideoPopup()">×</span>
+    <iframe id="videoFrame" width="100%" height="400px" frameborder="0" allowfullscreen></iframe>
+  </div>
+</div>
+
+<script>
+  function openVideoPopup(link) {
+    document.getElementById('videoPopup').classList.remove('hidden');
+    document.getElementById('videoFrame').src = link;
+  }
+
+  function closeVideoPopup() {
+    document.getElementById('videoPopup').classList.add('hidden');
+    document.getElementById('videoFrame').src = '';
+  }
+</script>
+
+</body>
+</html>
